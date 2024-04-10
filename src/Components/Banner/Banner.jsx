@@ -7,7 +7,7 @@ import { GiFoodTruck } from 'react-icons/gi'
 const Banner = () => {
     return (
         <div className='min-h-[550px] flex justify-center items-center 
-        py-12 sm:py-0 dark:bg-gray-950 dark:text-white duration-200'>
+        pt-14 py-12 sm:py-0 dark:bg-gray-950 dark:text-white duration-200'>
             <div className='container'>
                 <div className='grid grid-cols-1 sm:grid-cols-2
                 gap-6 items-center'>
