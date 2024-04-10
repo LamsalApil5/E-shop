@@ -2,6 +2,7 @@ import React from 'react'
 import img1 from "../../assets/women/women.png";
 import img2 from "../../assets/women/women3.png";
 import img3 from "../../assets/women/women4.png";
+import { FaStar } from 'react-icons/fa6';
 
 const ProductsData = [
     {
@@ -25,7 +26,7 @@ const ProductsData = [
 
 const TopProducts = () => {
     return (
-        <div>
+        <div className='pt-14 pb-12  dark:bg-gray-950 dark:text-white duration-200'>
             <div className='container'>
                 {/* Header section */}
                 <div className='text-left mb-24'>
@@ -38,30 +39,37 @@ const TopProducts = () => {
                     </p>
                 </div>
                 {/* Body section */}
-                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center gap=5'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center gap=5 '>
                     {
                         ProductsData.map((data) => (
                             <div
+                                data-aos="zoom-in"
                                 className='rounded-2xl bg-white dark:bg-gray=800 hover:bg-black/80 dark:hover:bg-primary
-                            hover:text-white relative shadow-xl duration-300 group max-w-[300px] 
-                            '
-                            >
+                            hover:text-white relative shadow-xl duration-300 group max-w-[300px]  dark:bg-white dark:text-white duration-200'>
                                 {/* Image section */}
                                 <div className='h-[100px]'>
                                     <img src={data.img} alt=""
-                                        className='max-w-[140xpx] block mx-auto transform
+                                        className='max-w-[180px] block mx-auto transform
                                     -translate-y-20 group-hover:scale-105 duration-300 drop-shadow-md'
                                     />
                                 </div>
                                 {/* Detail section */}
-                                <div className='p-4 text-center'>
-                                    <div className='w-full flex items-center justify-center gap'>
-                                      <FaStar /> 
-                                      
+                                <div className='p-4 text-center dark:bg-gray-950 dark:text-white duration-200'>
+                                    <div className='w-full flex items-center justify-center gap-1'>
+                                        <FaStar className='text-yellow-400' />
+                                        <FaStar className='text-yellow-400' />
+                                        <FaStar className='text-yellow-400' />
+                                        <FaStar className='text-yellow-400' />
+
                                     </div>
                                     <h1 className='text-xl font-bold'>{data.title}</h1>
-                                    <p className='text-gray-500 group-hover'
+                                    <p className='text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2'
                                     >{data.description}</p>
+                                    <button
+                                        className='bg-primary hover:scale-105 duration-300 text-white py-1 px-4
+                                        rounded-full mt-4 group-hover:bg-white group-hover:text-primary'>
+                                        Order Now
+                                    </button>
                                 </div>
                             </div>
                         ))
