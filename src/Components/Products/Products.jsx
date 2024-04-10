@@ -33,14 +33,14 @@ const ProductsData = [
         id: 4,
         img: img4,
         title: "Printed T-Shirt",
-        rqating: 2.2,
+        rqating: 3.0,
         color: "White",
         aosDelay: "600"
     }, {
         id: 5,
         img: img5,
         title: "Fashin T-Shirt",
-        rqating: 3.5,
+        rqating: 5.0,
         color: "Pink",
         aosDelay: "800"
     },
@@ -48,7 +48,7 @@ const ProductsData = [
 
 const Products = () => {
     return (
-        <div className='mt-14 mb-12'>
+        <div className='pt-14 pb-12  dark:bg-gray-950 dark:text-white duration-200'>
             <div className='container'>
                 {/* Header section */}
                 <div className='text-center mb-10 max-w-[600px] mx-auto'>
