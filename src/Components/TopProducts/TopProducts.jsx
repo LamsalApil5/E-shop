@@ -26,7 +26,7 @@ const ProductsData = [
 
 const TopProducts = () => {
     return (
-        <div className='pt-14 pb-12  dark:bg-gray-950 dark:text-white duration-200'>
+        <div className='pt-14 pb-14  dark:bg-gray-950 dark:text-white duration-200'>
             <div className='container'>
                 {/* Header section */}
                 <div className='text-left mb-24'>
