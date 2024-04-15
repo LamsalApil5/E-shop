@@ -11,6 +11,7 @@ import TopProducts from './Components/TopProducts/TopProducts';
 import Banner from './Components/Banner/Banner';
 import Subscribe from './Components/Subscribe/Subscribe';
 import Testimonials from './Components/Testimonials/Testimonials';
+import Footer from './Components/Footer/Footer';
 const App = () => {
   React.useEffect(() => {
     AOS.init({
@@ -23,7 +24,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
       <Navbar />
       <Hero />
       <Products />
@@ -32,6 +33,7 @@ const App = () => {
       <Subscribe />
       <Products />
       <Testimonials />
+      <Footer />
     </div>
   )
 }

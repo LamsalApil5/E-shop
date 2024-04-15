@@ -1,43 +1,44 @@
 import React from 'react'
 import Slider from 'react-slick'
+import Profile from '../../assets/man.png'
 
 const testionialData = [
     {
         id: 1,
         name: "Shisir",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus inventore ipsa suscipit quibusdam amet",
-        img: "https:picsum.photos/101/106"
+        img: Profile
     },
     {
         id: 2,
         name: "Victor",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus inventore ipsa suscipit quibusdam amet",
-        img: "https:picsum.photos/101/101"
+        img: Profile
     },
     {
         id: 3,
         name: "Hari",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus inventore ipsa suscipit quibusdam amet",
-        img: "https:picsum.photos/101/102"
+        img: Profile
     },
     {
         id: 4,
         name: "Ram",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus inventore ipsa suscipit quibusdam amet",
-        img: "https:picsum.photos/101/103"
+        img: Profile
     },
     {
         id: 5,
         name: "Dev Raj",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus inventore ipsa suscipit quibusdam amet",
-        img: "https:picsum.photos/101/104"
+        img: Profile
     },
     {
         id: 6,
         name: "Bishnu",
         text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim temporibus inventore ipsa suscipit quibusdam amet",
-        img: "https:picsum.photos/101/105"
-    },
+        img: Profile
+    }
 ]
 
 const Testimonials = () => {
